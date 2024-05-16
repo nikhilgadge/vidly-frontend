@@ -2,8 +2,6 @@ version: "3.8"
 
 services:
   frontend:
-    depends_on: 
-      - backend
     build: .
     ports:
       - 3000:3000
