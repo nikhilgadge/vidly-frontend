@@ -18,7 +18,7 @@ jobs:
         run: docker-compose up -d
 
       - name: test
-        run: docker-compose run -e CI=true --rm frontend npm run test 
+        run: docker-compose run -e CI=true --rm frontend npm run test -- --coverage
 
       - name: clear
         run: docker-compose down
