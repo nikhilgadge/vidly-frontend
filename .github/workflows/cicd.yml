@@ -11,23 +11,17 @@ jobs:
     
       
     steps:
-      - name: Use Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "14.16.0"
-        
-    
       - name: Checkout
         uses: actions/checkout@v2
 
       - name: build
-        run: npm install && npm start
-
-      - name: build
-        run: npm start
+        run: docker-compose up -d
 
       - name: test
-        run: npm run test
+        run: docker-compose run -e CI=true --rm frontend npm run test 
+
+      - name: clear
+        run: docker-compose down
 
       
         
