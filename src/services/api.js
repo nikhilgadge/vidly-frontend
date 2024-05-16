@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://52.37.237.225:3001/api";
+const baseUrl = process.env.BASE_URL || "http://localhost:3001/api";
 
 const api = {
   get: (endpoint) => axios.get(baseUrl + endpoint),
