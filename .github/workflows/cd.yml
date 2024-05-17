@@ -1,12 +1,11 @@
-name: Deploy frontend
-
+name: CI
 on:
   push:
     branches:
       - main
 
 jobs:
-  build: 
+  deploy: 
     runs-on: ubuntu-latest
       
     steps:
