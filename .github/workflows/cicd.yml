@@ -1,9 +1,6 @@
 name: Deploy frontend
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
 
 
@@ -27,4 +24,4 @@ jobs:
 
       
         
-          #hi
+          #hibj
