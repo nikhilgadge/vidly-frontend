@@ -37,7 +37,7 @@ function App() {
       setMovies(movies.filter((m) => m !== movie));
       await api.remove(moviesEndpoint + "/" + movie._id);
     } catch (error) {
-      setError("Could not delete the movie!");
+      setError("Could not delete the movie!!!!!!!!");
       setMovies(movies);
     }
   };
