@@ -1,6 +1,4 @@
 FROM node:14.16.0-alpine3.13 as build-stage
-ARG BASE_URL
-ENV BASE_URL ${BASE_URL}
 WORKDIR /app
 COPY package*.json ./
 RUN npm install

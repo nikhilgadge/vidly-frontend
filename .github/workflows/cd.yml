@@ -30,9 +30,7 @@ jobs:
           tags: nikhilgadge/vidly-frontend:${{ github.run_id }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          build-args: |
-            "BASE_URL=http://35.91.70.217:3001"
-
+    
       - name: SSH to EC2 to deploy stack 
         uses: appleboy/ssh-action@master
         with:
