@@ -14,7 +14,7 @@ function App() {
       const { data } = await api.get(moviesEndpoint);
       setMovies(data);
     } catch (error) {
-      setError("Could not fetch the movies!");
+      setError("Could not fetch the movies!!!!!");
     }
   };
 
