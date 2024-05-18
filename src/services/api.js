@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const baseUrl = process.env.BASE_URL || "http://localhost:3001/api";
+const baseUrl = "http://localhost:3001/api";
+console.log(baseUrl);
 
 const api = {
   get: (endpoint) => axios.get(baseUrl + endpoint),
